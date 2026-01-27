@@ -15,6 +15,7 @@ header {
   padding: 0 30px;
   height: 113px;
   width: 100%;
+  margin-bottom: 90px;
 
   div.name_logo {
     display: flex;
@@ -46,14 +47,47 @@ header {
       }
     }
   }
-  button.sign_up {
-    display: none;
-    width: 160px;
-    height: 49.7px;
-    background-color: #002699;
-    border-radius: 5px;
-    color: white;
-    border: none;
+}
+
+button.sign_up {
+  display: none;
+  width: 160px;
+  height: 49.7px;
+  background-color: #002699;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+button.show_btn {
+  display: block;
+}
+
+.first {
+  div.rent_article {
+    padding: 0 30px;
+    margin-bottom: 144px;
+    h2 {
+      font-size: 64px;
+      font-weight: 700;
+      font-family: "Volkhov", serif;
+      color: #222222;
+      width: 340px;
+      margin-bottom: 32px;
+    }
+    p.first_paragraph {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      color: #666666;
+      margin-bottom: 48px;
+      width: 324px;
+    }
+  }
+  .main_image {
+    max-width: 700px;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -71,6 +105,28 @@ header {
     }
     button.sign_up {
       display: block;
+    }
+  }
+  .first {
+    display: flex;
+    gap: 111px;
+    justify-content: center;
+    margin-bottom: 137px;
+    div.rent_article {
+      h2 {
+        width: 536px;
+        margin-bottom: 20px;
+      }
+      p.first_paragraph {
+        margin-bottom: 108.7px;
+        width: 497px;
+      }
+    }
+    .main_image {
+      img {
+        width: 502px;
+        height: 502px;
+      }
     }
   }
 }
