@@ -99,28 +99,30 @@ button.show_btn {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  h3 {
-    font-size: 48px;
-    font-weight: 700;
-    width: 100%;
-    text-align: center;
-       font-family: "Volkhov", serif;
-  }
-  p.second_paragraph {
-    font-size: 18px;
-    font-weight: 400;
-    color: rgba(102, 102, 102, 1);
-    width: 360px;
-    text-align: center;
-    line-height: 32px;
-  }
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  width: 360px;
+  text-align: center;
+  line-height: 32px;
 }
 
-
-
-
-
-
+h3 {
+  font-size: 48px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  font-family: "Volkhov", serif;
+}
+.third {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* responsive */
 
@@ -158,6 +160,23 @@ button.show_btn {
         width: 502px;
         height: 502px;
       }
+    }
+  }
+  .main {
+    margin: clamp(30px, 5vw, 40px);
+  }
+
+  .second {
+    gap: 43px;
+    p {
+      width: 482px;
+    }
+  }
+  .third {
+    gap: 43px;
+
+    p {
+      width: 482px;
     }
   }
 }
