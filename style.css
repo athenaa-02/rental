@@ -124,6 +124,40 @@ h3 {
   align-items: center;
 }
 
+.fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 62px;
+  gap: 36px;
+  margin-bottom: 108px;
+  .card {
+    width: 370px;
+    height: 390px;
+    box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
+    border-radius: 16px;
+    img {
+      width: 100%;
+      height: 285px;
+      border-radius: 16px;
+    }
+    .description {
+      padding: 0 24px 0 27px;
+      display: flex;
+      justify-content: space-between;
+      span.price {
+        color: rgba(0, 38, 153, 1);
+        font-weight: 600;
+        font-size: 24px;
+      }
+      span.origin {
+        font-weight: 500;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
 /* responsive */
 
 @media screen and (min-width: 1150px) {
@@ -178,5 +212,11 @@ h3 {
     p {
       width: 482px;
     }
+  }
+
+  section.fourth {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
   }
 }
